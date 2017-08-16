@@ -1,0 +1,11 @@
+<ion-content class="content">
+  <ion-list *ngFor="let promotor of data">
+    <ion-item *ngFor="let event of promotor.events">
+      <ion-avatar>
+        <img src="{{ event.image }}" alt="">
+      </ion-avatar>
+      <h2>{{ event.name }}</h2>
+      <p>{{ event.description }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
